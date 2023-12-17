@@ -158,3 +158,55 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .left-info,
+  .right-info {
+    width: 100%; /* Make both sides take the full width */
+    float: none;
+  }
+
+  .left-info {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .today-info {
+    top: 50px;
+    right: 20px;
+    align-items: flex-end;
+  }
+
+  .today-weather {
+    font-size: 1rem;
+    bottom: 40px;
+  }
+
+  .weather-temp {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  .today-weather .uil {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for screens up to 480px wide */
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .day-info {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
